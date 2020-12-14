@@ -6,9 +6,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
+    <h1>Cartas de amor</h1>
+<h2></h2>
+
+<div class = "cajas">
+<div class ="textoCaja"
+
+  <form id="cifradoCesar">
+  <textarea id="textoNormal">
+
+    No puedo evitar amarte más de lo que es bueno para mí. Me sentiré feliz hasta que te vea otra vez. Siempre soy consciente  de mi cercanía, tu presencia nunca me deja.
+    Adiós a ti, a quien amo mil veces.
+
+    -Johann Wolfgang Von Goethe
+  </textarea>
+
+  <input class="offset" id="ingresoOffset" value="3">
+
+  <button class="borrar" id="borrar">x</button>
+
+  <button id="encriptar"> Encriptar </button>
+  <button id="desencriptar"> Desencriptar </button>
+
+
+   </form>
+</div>
+
+
+<div class="textoCaja">
+
+  <textarea class= "textoEncriptado" id="textoEncriptado" readonly></textarea>
+  <button class="copiar" id="copiar">copiar</button>
+
+
+</div>
+</div>
+</div>
+  
+        <script src="index.js" type="module"></script>
+        <!--<script>
+          let eira=()=>console.log("Si sirve")
+        </script>-->
   </body>
 </html>

@@ -1,0 +1,54 @@
+body{
+    Background-color: #f6f2f2;}
+
+  h1{
+    text-align:center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+  }
+
+  textarea{
+    font-family: Bradley Hand, cursive;
+    width: 400px;
+    height: 200px; 
+    resize: none; 
+    border-radius: 5px;
+    margin-top: 20%;
+    position: relative;
+    }
+
+  
+    button{
+      font-family: Bradley Hand, cursive;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .borrar textarea{
+      position:absolute;
+    }
+
+    .textoEncriptado{
+      border: none;
+      background-color: #fe7bac;
+    }
+
+    .cajas{
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+
+    .textoCaja{
+      display: flex; 
+      flex-flow: column;
+      background-image: url("https://pngimg.com/uploads/heart/heart_PNG51183.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+      width: 500px;
+      height: 500px;
+      padding: 100px;
+      align-items: center;
+      align-content: center;
+    }
+
