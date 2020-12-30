@@ -6,25 +6,23 @@ let encodeButton = document.getElementById("encriptar");
 
 encodeButton.onclick = function(){
 
-    var texto = document.getElementById("textoNormal").value;
+    let texto = document.getElementById("textoNormal").value;
 
-    var desplazamiento = document.getElementById("ingresoOffset").value;
-    var offset = parseInt(desplazamiento); 
+    let desplazamiento = document.getElementById("ingresoOffset").value;
+    let offset = parseInt(desplazamiento); 
 
-    var encriptado = cipher.encode(offset,texto);
+    document.getElementById("textoEncriptado").innerHTML = cipher.encode(offset,texto);
 }
 
 let decodeButton = document.getElementById("desencriptar");
 
 decodeButton.onclick = function(){
 
-    var textoEnc = document.getElementById("textoEncriptado").value;
+    let textoEnc = document.getElementById("textoNormal").value;
 
-    var desplazamiento = document.getElementById("ingresoOffset").value;
-    var thisOffset = parseInt(desplazamiento); 
-    var offset = (26 - thisOffset) % 26;
+    let offset = document.getElementById("ingresoOffset").value;
 
-    var desencriptado = cipher.decode(offset,textoEnc)
+    document.getElementById("textoEncriptado").innerHTML = cipher.decode(offset,textoEnc);
 }
 
 document.getElementById("borrar").onclick = function(){
@@ -32,8 +30,8 @@ document.getElementById("borrar").onclick = function(){
 }
 
 document.getElementById("copiar").onclick = function(){
-    var copiado = document.getElementById("textoEncriptado")
-    copiado.querySelector();
+    let copiado = document.getElementById("textoEncriptado");
+    copiado.select();
     document.execCommand("copy");
 
 };
